@@ -16,7 +16,6 @@ block content
       th Nombre
       th Email
       th Cumpleaños
-      th DNI
       th Edad
     tbody
     each user in users
@@ -25,7 +24,6 @@ block content
         td= user.name
         td= user.mail
         td= user.birthday.toLocaleDateString('es-AR')
-        td= user.dni
         td= user.age
   hr
   h4 Más info en 
