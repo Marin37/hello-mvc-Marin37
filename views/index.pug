@@ -19,6 +19,14 @@ block content
       th DNI
       th Edad
     tbody
+    each user in users
+      tr
+        td= user.id
+        td= user.name
+        td= user.mail
+        td= user.birthday.toLocaleDateString('es-AR')
+        td= user.dni
+        td= user.age
   hr
   h4 Más info en 
     a(href='#') MVC
